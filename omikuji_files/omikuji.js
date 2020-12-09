@@ -34,5 +34,5 @@ function linkclick(){
 
     var array = new Array('大吉', '吉', '小吉', '凶', '大凶');
 
-    window.open('http://twitter.com/share?url=https://k49977.github.io/omikuji/index.html&text=今日のアニメおみくじの結果は'+ array[randNum] + 'でした。' + '&hashtags=はむっちゃまんのアニメサイト', '_blank');
+    window.open('http://twitter.com/share?url=https://k49977.github.io/omikuji/index.html&text=今日のアニメおみくじの結果は'+ array[randNum] + 'でした。' + '&hashtags=はっちゃまんのアニメサイト', '_blank');
 }
