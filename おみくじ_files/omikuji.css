@@ -1,0 +1,84 @@
+p{
+  font-size: 50px;
+}
+
+#main {
+  margin: 35px auto 0;
+  width: 250px; /*箱を横に移動*/
+  position: relative;
+}
+#omikuji {
+  position: relative;
+}
+#bou {
+  height: 260px;
+  top: 25px;
+  left: 93px;
+  overflow: hidden;
+  position: absolute;
+}
+#bou img {
+  margin: 260px 0 0 -18px;
+}
+#hako {
+  top: 243px;
+  position: absolute;
+}
+#startBtn {
+  margin-left: -125px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  cursor: pointer;
+}
+#startBtn:hover {
+  opacity: 0.8;
+}
+#icon {
+  width: 1px;
+  position: absolute;
+  top: 200px;
+  left : 50px;
+}
+#icon img {
+  width: 100%;
+}
+
+#btn-social-long-twitter {
+  padding: 0.3em 0.7em;
+  font-weight: bold;
+  color: #FFF;/*文字・アイコン色*/
+  border-radius: 7px;/*角丸に*/
+  display: inline-block;
+  height: 50px;/*高さ*/
+  width: 300px;/*幅*/
+  text-align: center;/*中身を中央寄せ*/
+  font-size: 25px;/*文字のサイズ*/
+  line-height: 50px;/*高さと合わせる*/
+  background: #1da1f3;
+  overflow: hidden;/*はみ出た部分を隠す*/
+  text-decoration:none;/*下線は消す*/
+}
+
+#btn-social-long-twitter .fa-twitter {
+  font-size: 30px;
+}
+
+#btn-social-long-twitter span {
+  display:inline-block;
+  transition: .5s;
+}
+
+#btn-social-long-twitter:hover span {
+  opacity:0.7;
+}
+
+.foot {
+  text-align: center;
+  margin-top:746px;
+}
+
+
+.tophemodoru{
+  font-size: 2em;
+}
