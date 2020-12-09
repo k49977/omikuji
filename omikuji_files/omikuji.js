@@ -4,6 +4,9 @@ $(function(){
   randNum = Math.floor(Math.random() * 5);
   $('#bou').html('<img src="./omikuji_files/img/bou'+ randNum +'.png">');
   var $ogp = $('#icon').html('<img src="./omikuji_files/img/icon'+ randNum +'.png">');
+  // metaのイメージを上書き
+  // var imgUrl = 'https://k49977.github.io/omikuji/omikuji_files/img/icon'+ randNum +'.png';
+  // $("#meta-img").attr('content',imgUrl);
  
   //スタートボタンをクリック
   $("#startBtn").click(function(){
