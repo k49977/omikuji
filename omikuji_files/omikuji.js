@@ -2,8 +2,8 @@ $(function(){
  
   //おみくじの配置
   randNum = Math.floor(Math.random() * 5);
-  $('#bou').html('<img src="./おみくじ_files/img/bou'+ randNum +'.png">');
-  var $ogp = $('#icon').html('<img src="./おみくじ_files/img/icon'+ randNum +'.png">');
+  $('#bou').html('<img src="./omikuji_files/img/bou'+ randNum +'.png">');
+  var $ogp = $('#icon').html('<img src="./omikuji_files/img/icon'+ randNum +'.png">');
  
   //スタートボタンをクリック
   $("#startBtn").click(function(){
