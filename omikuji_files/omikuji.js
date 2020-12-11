@@ -5,11 +5,11 @@ $(function(){
   $('#bou').html('<img src="./omikuji_files/img/bou'+ randNum +'.png">');
   var $ogp = $('#icon').html('<img src="./omikuji_files/img/icon'+ randNum +'.png">');
   // metaのイメージを上書き
-  var imgUrl = 'https://k49977.github.io/omikuji/omikuji_files/img/icon'+ randNum +'.png';
-  const url = new URL(location);
-  url.searchParams.set("id", randNum);
+  //var imgUrl = 'https://k49977.github.io/omikuji/omikuji_files/img/icon'+ randNum +'.png';
+  var url = new URL(location);
+  url = url.toString().replace('index0' , 'intdex' + randNum);
   $("#url").val(url);
-  $("#meta-img").attr('content',imgUrl);
+  //$("#meta-img").attr('content',imgUrl);
  
   //スタートボタンをクリック
   $("#startBtn").click(function(){
