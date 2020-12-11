@@ -6,6 +6,9 @@ $(function(){
   var $ogp = $('#icon').html('<img src="./omikuji_files/img/icon'+ randNum +'.png">');
   // metaのイメージを上書き
   var imgUrl = 'https://k49977.github.io/omikuji/omikuji_files/img/icon'+ randNum +'.png';
+  const url = new URL(location);
+  url.searchParams.set("id", randNum);
+  $("#url").val(url);
   $("#meta-img").attr('content',imgUrl);
  
   //スタートボタンをクリック
@@ -36,6 +39,8 @@ $(function(){
 function linkclick(){
 
     var array = new Array('大吉', '吉', '小吉', '凶', '大凶');
+    var url = $('#url').val();
 
-    window.open('http://twitter.com/share?url=https://k49977.github.io/omikuji/index.html&text=今日のアニメおみくじの結果は'+ array[randNum] + 'でした。' + '&hashtags=はっちゃまんのアニメサイト', '_blank');
+    //window.open('http://twitter.com/share?url=https://k49977.github.io/omikuji/index.html&text=今日のアニメおみくじの結果は'+ array[randNum] + 'でした。' + '&hashtags=はっちゃまんのアニメサイト', '_blank');
+    window.open('http://twitter.com/share?url='+url+'&text=今日のアニメおみくじの結果は'+ array[randNum] + 'でした。' + '&hashtags=はっちゃまんのアニメサイト', '_blank');
 }
