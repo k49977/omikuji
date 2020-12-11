@@ -7,7 +7,7 @@ $(function(){
   // metaのイメージを上書き
   //var imgUrl = 'https://k49977.github.io/omikuji/omikuji_files/img/icon'+ randNum +'.png';
   var url = new URL(location);
-  url = url.toString().replace('index0' , 'intdex' + randNum);
+  url = url.toString().replace('index0' , 'index' + randNum);
   $("#url").val(url);
   //$("#meta-img").attr('content',imgUrl);
  
